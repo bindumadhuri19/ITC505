@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Collection</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="https://example.com/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <section id="home" class="active">
+        <div id="hero">
+          <h1>Art Collection</h1>
+          <p>Discover and purchase exquisite art pieces from our curated collection.</p>
+        </div>
+        <div class="section-content">
+          <img src="main-1.jpg" alt="Featured Art" />
+          <div>
+            <h2>Our Collection</h2>
+            <p>
+              Our collection features a diverse range of art pieces from renowned and emerging artists. Each piece is carefully curated to provide a unique and captivating experience. Explore paintings, sculptures, photographs, and more that will elevate any space and inspire creativity.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="section-content">
+          <img src="main-5.jpg" alt="Gallery" />
+          <div>
+            <h2>About Us</h2>
+            <p>
+              At Art Collection, we are passionate about bringing exceptional art to enthusiasts and collectors. Our mission is to connect people with beautiful, thought-provoking pieces that enrich their lives and spaces. We work closely with artists to ensure that each piece in our collection is of the highest quality and represents a unique artistic vision.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="section-content">
+          <div class="gallery-item">
+            <img src="main-2.jpeg   " alt="Art Piece 1" />
+            <div>
+              <h2>Art Piece 1</h2>
+              <p>This digital art collection showcases vibrant, imaginative pieces that blend modern aesthetics with abstract themes, highlighting the fusion of technology and creativity in contemporary visual storytelling.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="main-3.jpeg" alt="Art Piece 2" />
+            <div>
+              <h2>Art Piece 2</h2>
+              <p>This pencil art collection features detailed, expressive drawings that capture the essence of realism and imagination, showcasing the intricate beauty and depth achievable with simple graphite.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="main-6.jpeg" alt="Art Piece 3" />
+            <div>
+              <h2>Art Piece 3</h2>
+              <p>This acrylic painting collection bursts with vivid colors and dynamic textures, showcasing a range of themes from abstract to realism, each piece capturing the artist's bold and expressive vision.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="main-7.jpeg" alt="Art Piece 4" />
+            <div>
+              <h2>Art Piece 4</h2>
+              <p>A striking sculpture that blends modern design with traditional craftsmanship.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="section-content">
+          <img src="save-us.jpg" alt="Contact Us" />
+          <div>
+            <h2>Contact Us</h2>
+            <p>
+              Have questions? Reach out to us to learn more about our collection and purchasing options.
+            </p>
+            <p>
+              Email: <a href="mailto:artbybindu@gmail.com">info@artcollection.com</a>
+            </p>
+            <p>Phone: <a href="tel:+1 234 567 890">+1 234 567 990</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+
+    <script>
+      const navLinks = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll("section");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          const targetSection = document.querySelector(
+            this.getAttribute("href")
+          );
+
+          sections.forEach((section) => {
+            section.classList.remove("active");
+          });
+
+          targetSection.classList.add("active");
+        });
+      });
+
+      document.getElementById("home").classList.add("active");
+    </script>
+  </body>
+</html>
