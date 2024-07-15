@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout with Sorting Techniques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sorting Techniques Demo</h1>
+    </header>
+
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <h2>Main Content Area</h2>
+        <p>Click the button below to sort an array of numbers using Bubble Sort:</p>
+        <button id="sortButton">Sort Numbers</button>
+        <div id="output"></div>
+    </main>
+
+    <aside class="advertisement">
+        <a href="https://www.amazon.com/Blink-Outdoor-4th-Gen-Add/dp/B0B1N7LJD3/ref=sr_1_1_ffob_sspa?crid=1ATFHY1FI3XQY&dib=eyJ2IjoiMSJ9.oRsGoX5iMdi9aRSsisg5xmjNb9DmMJAM4H3FiUwCHwjXTTlfiQ0WeLKcNKUOxro3BSVZUByIVc4L3Jst1uV7GvDhmAMw8G-9h3C9T6zwMEY9YXF6EdEy91mEMctsPKywzW-cMdHKeukdqx9F9Lt8wkpQ9siOrje2ZPexbbgqbcK5SsHfVJSVps50MnhcoJBW6QJMJIfedznxZPDG53xIJDrLb0hVqhr-JDgDAGJUl3E.wZvg2Gi4L0ei-GYHR8yDcZMUirRxRYNwlytnk3LKfvk&dib_tag=se&keywords=camera&qid=1720924911&sprefix=camera%2Caps%2C295&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">
+            <img src="product.jpg" alt="Advertisement">
+        </a>
+    </aside>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <p id="addendum"></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+
+        // Addendum description
+        const addendumText = `
+            This project shows how to put a basic Bubble Sort algorithm into practice.
+            When a user clicks the "Sort Numbers" button, a list of numbers arranged in ascending order is displayed.
+            The main difficulty was making sure the sorted output updated dynamically in the DOM; this was overcome by using JavaScript to manipulate the DOM elements appropriately.
+        `;
+        document.getElementById('addendum').textContent = addendumText;
+    </script>
+</body>
+</html>
