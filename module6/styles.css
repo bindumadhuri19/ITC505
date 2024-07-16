@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #a7c1f6;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    padding: 2em;
+}
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2em; /* Increased gap for better spacing */
+    margin-bottom: 2em;
+}
+.sessions-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.content-card {
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+    width: 300px; /* Fixed width for session cards */
+    height: 300px; /* Fixed height for session cards */
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+}
+.content-card img {
+    max-width: 100%;
+    max-height: 60%;
+    object-fit: cover;
+}
+footer {
+    background-color: #2a504c;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+form {
+    display: grid;
+    grid-gap: 1em;
+}
+form label {
+    font-weight: bold;
+}
+form input, form textarea {
+    padding: 0.5em;
+    width: 100%;
+}
+form button {
+    padding: 0.5em 1em;
+    background-color: #61dafb;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #21a1f1;
+}
