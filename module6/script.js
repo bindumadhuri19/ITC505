@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const speakers = [
-        { name: 'Dr. Jane Doe', topic: 'AI in Healthcare' },
-        { name: 'John Smith', topic: 'Blockchain Technology' },
+        { name: 'Sanjay Guptha', topic: 'AI in Healthcare' },
+        { name: 'Dr. Satya N Gupta', topic: 'Blockchain Technology' },
         // Add more speakers here
     ];
 
