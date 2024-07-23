@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        .task {
+            cursor: pointer;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #90ee90;
+        }
+        .highlight {
+            background-color: #ffcccb;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <ul id="taskList">
+        <li class="task" data-id="1">Submit the assignment on time</li>
+        <li class="task" data-id="2">Contact the professor for additional help</li>
+        <li class="task" data-id="3">Wake up early in the morning</li>
+        <li class="task" data-id="4">Go to the gym by 7 am</li>
+        <li class="task" data-id="5">Take nutritious food</li>
+    </ul>
+
+    <form id="taskForm">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <select id="taskSelect" name="task">
+            <option value="">Select a task</option>
+        </select>
+        <button type="submit">Submit Task</button>
+    </form>
+    <div id="submittedTasks"></div>
+
+    <footer>
+        <h2>HTTP Status Codes</h2>
+        <ul>
+            <li>200 OK: The request has succeeded.</li>
+            <li>201 Created: The request has been fulfilled and resulted in a new resource being created.</li>
+            <li>400 Bad Request: The server could not understand the request due to invalid syntax.</li>
+            <li>401 Unauthorized: The client must authenticate itself to get the requested response.</li>
+            <li>403 Forbidden: The client does not have access rights to the content.</li>
+            <li>404 Not Found: The server could not find the requested resource.</li>
+            <li>500 Internal Server Error: The server encountered a situation it doesn't know how to handle.</li>
+            <li>502 Bad Gateway: The server, while acting as a gateway or proxy, received an invalid response from the upstream server.</li>
+            <li>503 Service Unavailable: The server is not ready to handle the request, often due to being overloaded or down for maintenance.</li>
+            <li>504 Gateway Timeout: The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server.</li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
