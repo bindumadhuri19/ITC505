@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Libs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Fill in the Mad Lib</h1>
+  <form id="madLibForm" action="/ITC505/lab-7" method="POST">
+    <label for="noun">Noun:</label>
+    <input type="text" id="noun" name="noun" required><br>
+
+    <label for="verb">Verb:</label>
+    <input type="text" id="verb" name="verb" required><br>
+
+    <label for="adjective">Adjective:</label>
+    <input type="text" id="adjective" name="adjective" required><br>
+
+    <label for="adverb">Adverb:</label>
+    <input type="text" id="adverb" name="adverb" required><br>
+
+    <label for="pluralNoun">Plural Noun:</label>
+    <input type="text" id="pluralNoun" name="pluralNoun" required><br>
+
+    <button type="submit">Submit</button>
+  </form>
+  <div id="result"></div>
+
+  <footer>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    <p><strong>Addendum:</strong></p>
+    <p>1. **ExpressJS Server Setup:** Create a `server.js` file with the provided code to start an Express server. Set up static file serving from the `public` directory and handle routes.</p>
+    <p>2. **Install Packages:** Use `npm` to install Express, Morgan, and Forever with `npm install express morgan` and `npm install -g forever`.</p>
+    <p>3. **Directory Structure:** Place your HTML and CSS files in a `public` folder within your project directory.</p>
+    <p>4. **Run and Verify:** Start the server with `node server.js local`, then visit `http://localhost:8080/ITC505/lab-7/index.html` to check functionality.</p>
+  </footer>
+</body>
+</html>
