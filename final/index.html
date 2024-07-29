@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lights Out Game</h1>
+    </header>
+    <main>
+        <div id="game-board"></div>
+        <div class="controls">
+            <button id="refresh-button">Refresh</button>
+            <button id="hint-button">Hint</button>
+        </div>
+        <div class="info">
+            <p>Moves: <span id="move-counter">0</span></p>
+        </div>
+    </main>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <section>
+            <h2>Addendum</h2>
+            <p>During the development of the "Lights Out" game, several key aspects were addressed:</p>
+
+            <h3>1. Initial Setup:</h3>
+            <p>
+                <strong>Objective:</strong> Create a playable "Lights Out" game.<br>
+                <strong>Solution:</strong> Started with an all-white board and used simulated clicks to configure the board, ensuring it's always solvable.
+            </p>
+
+            <h3>2. CSS Class Management:</h3>
+            <p>
+                <strong>Objective:</strong> Manage square states with CSS classes.<br>
+                <strong>Solution:</strong> Used the `.is-off` class to represent the "off" state, keeping JavaScript simple and clean.
+            </p>
+
+            <h3>3. Visual Enhancements:</h3>
+            <p>
+                <strong>Objective:</strong> Improve game appearance and usability.<br>
+                <strong>Solution:</strong> Added animations and styled the board and controls for better user experience.
+            </p>
+
+            <h3>Challenges and Solutions</h3>
+            <p>
+                <strong>Game Solvability:</strong> Ensured solvability by starting with an all-white board and using simulated clicks.<br>
+                <strong>User Interface Design:</strong> Created a clean design and added animations for usability.<br>
+                <strong>Hint Mechanism:</strong> Implemented a hint feature that highlights the best square without making the game too easy.
+            </p>
+
+            <h3>Insights Gained</h3>
+            <p>
+                <strong>User Experience:</strong> Enhancements like animations and clear feedback improve the game experience.<br>
+                <strong>Solvability:</strong> Starting from a solvable state and introducing randomness maintains puzzle integrity.<br>
+                <strong>Modular Code Design:</strong> Separating CSS and JavaScript concerns leads to more maintainable code.
+            </p>
+        </section>
+    </footer>
+    <script type="text/javascript">
+        // Set the last modified date
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
